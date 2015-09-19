@@ -1,0 +1,22 @@
+﻿{
+  "version": "1.0.0",
+  "description": "Cascomio.Pilarometro.Common Class Library",
+  "authors": [ "cascomio" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "dependencies": {
+      "log4net": "1.2.11",
+      "Autofac": "4.0.0-beta7-130",
+      "Autofac.Framework.DependencyInjection": "4.0.0-beta7-130",
+      "Hudl.Mjolnir": "2.2.0.0",
+      "Newtonsoft.Json": "6.0.8.0",
+      "Microsoft.Framework.OptionsModel": "1.0.0-beta8-*",
+      "NEST":  "1.7.1"
+  },
+
+  "frameworks": {
+    "dnx451": { }
+  }
+}

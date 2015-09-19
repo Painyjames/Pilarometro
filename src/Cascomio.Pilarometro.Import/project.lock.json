@@ -1,0 +1,171 @@
+{
+  "locked": false,
+  "version": 2,
+  "targets": {
+    "DNX,Version=v4.5.1": {
+      "Elasticsearch.Net/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Elasticsearch.Net.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Elasticsearch.Net.dll": {}
+        }
+      },
+      "NEST/1.7.1": {
+        "type": "package",
+        "dependencies": {
+          "Elasticsearch.Net": "1.7.1",
+          "Newtonsoft.Json": "[7.0.0, 8.0.0)"
+        },
+        "compile": {
+          "lib/net45/Nest.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Nest.dll": {}
+        }
+      },
+      "Newtonsoft.Json/7.0.1-beta2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      }
+    },
+    "DNX,Version=v4.5.1/win7-x86": {
+      "Elasticsearch.Net/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Elasticsearch.Net.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Elasticsearch.Net.dll": {}
+        }
+      },
+      "NEST/1.7.1": {
+        "type": "package",
+        "dependencies": {
+          "Elasticsearch.Net": "1.7.1",
+          "Newtonsoft.Json": "[7.0.0, 8.0.0)"
+        },
+        "compile": {
+          "lib/net45/Nest.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Nest.dll": {}
+        }
+      },
+      "Newtonsoft.Json/7.0.1-beta2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      }
+    },
+    "DNX,Version=v4.5.1/win7-x64": {
+      "Elasticsearch.Net/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Elasticsearch.Net.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Elasticsearch.Net.dll": {}
+        }
+      },
+      "NEST/1.7.1": {
+        "type": "package",
+        "dependencies": {
+          "Elasticsearch.Net": "1.7.1",
+          "Newtonsoft.Json": "[7.0.0, 8.0.0)"
+        },
+        "compile": {
+          "lib/net45/Nest.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Nest.dll": {}
+        }
+      },
+      "Newtonsoft.Json/7.0.1-beta2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Elasticsearch.Net/1.7.1": {
+      "type": "package",
+      "sha512": "IiIV3w6IBOD7owqrPO591aLXc2J8skuH2xqiwSoQl4sL/X01lBhQIOHQkjQSV5BO6y9Fdn1d6jms1KayM4oJwg==",
+      "files": [
+        "Elasticsearch.Net.1.7.1.nupkg",
+        "Elasticsearch.Net.1.7.1.nupkg.sha512",
+        "Elasticsearch.Net.nuspec",
+        "lib/Elasticsearch.Net.dll",
+        "lib/Elasticsearch.Net.pdb",
+        "lib/Elasticsearch.Net.XML",
+        "lib/net40/Elasticsearch.Net.dll",
+        "lib/net40/Elasticsearch.Net.pdb",
+        "lib/net40/Elasticsearch.Net.XML",
+        "lib/net45/Elasticsearch.Net.dll",
+        "lib/net45/Elasticsearch.Net.pdb",
+        "lib/net45/Elasticsearch.Net.XML"
+      ]
+    },
+    "NEST/1.7.1": {
+      "type": "package",
+      "sha512": "S0IoqIyK6KrFUp4yrLoCghbFuyvO21B7MzXjlqRxH1D7DfMgI1zoEhGpfBLd6DfhOiNwkFhyyelXNyTH+W2wAw==",
+      "files": [
+        "lib/Nest.dll",
+        "lib/Nest.pdb",
+        "lib/Nest.XML",
+        "lib/net40/Nest.dll",
+        "lib/net40/Nest.pdb",
+        "lib/net40/Nest.XML",
+        "lib/net45/Nest.dll",
+        "lib/net45/Nest.pdb",
+        "lib/net45/Nest.XML",
+        "NEST.1.7.1.nupkg",
+        "NEST.1.7.1.nupkg.sha512",
+        "NEST.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/7.0.1-beta2": {
+      "type": "package",
+      "sha512": "/NZ+ZdbbNyoWYrjRajzERgKGGOcbjfGbi2mi/4C5MpT5BOV2nUoQ+RIYaN0WxYq6i20nHQbYN56IWBTB4ut20Q==",
+      "files": [
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+wp80+win8+wpa81+aspnetcore50/Newtonsoft.Json.dll",
+        "lib/portable-net45+wp80+win8+wpa81+aspnetcore50/Newtonsoft.Json.xml",
+        "Newtonsoft.Json.7.0.1-beta2.nupkg",
+        "Newtonsoft.Json.7.0.1-beta2.nupkg.sha512",
+        "Newtonsoft.Json.nuspec",
+        "tools/install.ps1"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "": [
+      "NEST >= 1.7.1"
+    ],
+    "DNX,Version=v4.5.1": []
+  }
+}

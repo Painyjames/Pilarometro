@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{10DBB271-0AAB-4AE1-A03A-C095D6E1EAA7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{35373366-3581-4F3D-BFF6-B3B1ED6624F3}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Cascomio.Pilarometro.Import", "src\Cascomio.Pilarometro.Import\Cascomio.Pilarometro.Import.xproj", "{436904ED-5EFE-4309-A2F7-FAACE0432012}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Cascomio.Pilarometro.Api", "src\Cascomio.Pilarometro.Api\Cascomio.Pilarometro.Api.xproj", "{5E063D5F-505B-41B7-8F4F-29173A7392B0}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Cascomio.Pilarometro.Common", "src\Cascomio.Pilarometro.Common\Cascomio.Pilarometro.Common.xproj", "{6B6AAB8D-0388-4CFA-87B5-4B421C67EF48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{436904ED-5EFE-4309-A2F7-FAACE0432012}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{436904ED-5EFE-4309-A2F7-FAACE0432012}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{436904ED-5EFE-4309-A2F7-FAACE0432012}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{436904ED-5EFE-4309-A2F7-FAACE0432012}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E063D5F-505B-41B7-8F4F-29173A7392B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E063D5F-505B-41B7-8F4F-29173A7392B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E063D5F-505B-41B7-8F4F-29173A7392B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E063D5F-505B-41B7-8F4F-29173A7392B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B6AAB8D-0388-4CFA-87B5-4B421C67EF48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B6AAB8D-0388-4CFA-87B5-4B421C67EF48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B6AAB8D-0388-4CFA-87B5-4B421C67EF48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B6AAB8D-0388-4CFA-87B5-4B421C67EF48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{436904ED-5EFE-4309-A2F7-FAACE0432012} = {10DBB271-0AAB-4AE1-A03A-C095D6E1EAA7}
+		{5E063D5F-505B-41B7-8F4F-29173A7392B0} = {10DBB271-0AAB-4AE1-A03A-C095D6E1EAA7}
+		{6B6AAB8D-0388-4CFA-87B5-4B421C67EF48} = {10DBB271-0AAB-4AE1-A03A-C095D6E1EAA7}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,20 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "Cascomio.Pilarometro.Import Console Application",
+  "authors": [ "cascomio" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "dependencies": {
+    "NEST": "1.7.1"
+  },
+
+  "commands": {
+    "Cascomio.Pilarometro.Import": "Cascomio.Pilarometro.Import"
+  },
+
+  "frameworks": {
+    "dnx451": { }
+  }
+}

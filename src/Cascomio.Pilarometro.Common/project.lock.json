@@ -1,0 +1,948 @@
+{
+  "locked": false,
+  "version": 2,
+  "targets": {
+    "DNX,Version=v4.5.1": {
+      "Autofac/4.0.0-beta7-130": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Autofac.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Autofac.dll": {}
+        }
+      },
+      "Autofac.Framework.DependencyInjection/4.0.0-beta7-130": {
+        "type": "package",
+        "dependencies": {
+          "Autofac": "4.0.0-beta7-130",
+          "Microsoft.Framework.DependencyInjection.Abstractions": "1.0.0-beta7"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Autofac.dll": {},
+          "lib/dnx451/Autofac.Framework.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Autofac.dll": {},
+          "lib/dnx451/Autofac.Framework.DependencyInjection.dll": {}
+        }
+      },
+      "Castle.Core/2.5.1": {
+        "type": "package",
+        "compile": {
+          "lib/NET35/Castle.Core.dll": {}
+        },
+        "runtime": {
+          "lib/NET35/Castle.Core.dll": {}
+        }
+      },
+      "Elasticsearch.Net/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Elasticsearch.Net.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Elasticsearch.Net.dll": {}
+        }
+      },
+      "Hudl.Common/1.4.1": {
+        "type": "package",
+        "compile": {
+          "lib/net35/Hudl.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net35/Hudl.Common.dll": {}
+        }
+      },
+      "Hudl.Config/1.6.0": {
+        "type": "package",
+        "dependencies": {
+          "log4net": "2.0.0"
+        },
+        "compile": {
+          "lib/net40/Hudl.Config.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Hudl.Config.dll": {}
+        }
+      },
+      "Hudl.Mjolnir/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Castle.Core": "2.5.1",
+          "Hudl.Common": "1.4.1",
+          "Hudl.Config": "1.6.0",
+          "Hudl.Mjolnir.Attributes": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Hudl.Mjolnir.dll": {},
+          "lib/net45/SmartThreadPool.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Hudl.Mjolnir.dll": {},
+          "lib/net45/SmartThreadPool.dll": {}
+        }
+      },
+      "Hudl.Mjolnir.Attributes/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Hudl.Mjolnir.Attributes.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Hudl.Mjolnir.Attributes.dll": {}
+        }
+      },
+      "log4net/1.2.11": {
+        "type": "package",
+        "compile": {
+          "lib/net40-full/log4net.dll": {}
+        },
+        "runtime": {
+          "lib/net40-full/log4net.dll": {}
+        }
+      },
+      "Microsoft.Framework.Configuration/1.0.0-beta8-15586": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.Configuration.Abstractions": "1.0.0-beta8-15586"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.Configuration.dll": {}
+        }
+      },
+      "Microsoft.Framework.Configuration.Abstractions/1.0.0-beta8-15586": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.Configuration.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.Configuration.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Framework.Configuration.Binder/1.0.0-beta8-15586": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.Configuration": "1.0.0-beta8-15586"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.Configuration.Binder.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.Configuration.Binder.dll": {}
+        }
+      },
+      "Microsoft.Framework.DependencyInjection.Abstractions/1.0.0-beta8-15574": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Framework.OptionsModel/1.0.0-beta8-15574": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.Configuration.Abstractions": "1.0.0-beta8-15586",
+          "Microsoft.Framework.Configuration.Binder": "1.0.0-beta8-15586",
+          "Microsoft.Framework.DependencyInjection.Abstractions": "1.0.0-beta8-15574"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.OptionsModel.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.OptionsModel.dll": {}
+        }
+      },
+      "NEST/1.7.1": {
+        "type": "package",
+        "dependencies": {
+          "Elasticsearch.Net": "1.7.1",
+          "Newtonsoft.Json": "[7.0.0, 8.0.0)"
+        },
+        "compile": {
+          "lib/net45/Nest.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Nest.dll": {}
+        }
+      },
+      "Newtonsoft.Json/6.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      }
+    },
+    "DNX,Version=v4.5.1/win7-x86": {
+      "Autofac/4.0.0-beta7-130": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Autofac.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Autofac.dll": {}
+        }
+      },
+      "Autofac.Framework.DependencyInjection/4.0.0-beta7-130": {
+        "type": "package",
+        "dependencies": {
+          "Autofac": "4.0.0-beta7-130",
+          "Microsoft.Framework.DependencyInjection.Abstractions": "1.0.0-beta7"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Autofac.dll": {},
+          "lib/dnx451/Autofac.Framework.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Autofac.dll": {},
+          "lib/dnx451/Autofac.Framework.DependencyInjection.dll": {}
+        }
+      },
+      "Castle.Core/2.5.1": {
+        "type": "package",
+        "compile": {
+          "lib/NET35/Castle.Core.dll": {}
+        },
+        "runtime": {
+          "lib/NET35/Castle.Core.dll": {}
+        }
+      },
+      "Elasticsearch.Net/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Elasticsearch.Net.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Elasticsearch.Net.dll": {}
+        }
+      },
+      "Hudl.Common/1.4.1": {
+        "type": "package",
+        "compile": {
+          "lib/net35/Hudl.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net35/Hudl.Common.dll": {}
+        }
+      },
+      "Hudl.Config/1.6.0": {
+        "type": "package",
+        "dependencies": {
+          "log4net": "2.0.0"
+        },
+        "compile": {
+          "lib/net40/Hudl.Config.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Hudl.Config.dll": {}
+        }
+      },
+      "Hudl.Mjolnir/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Castle.Core": "2.5.1",
+          "Hudl.Common": "1.4.1",
+          "Hudl.Config": "1.6.0",
+          "Hudl.Mjolnir.Attributes": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Hudl.Mjolnir.dll": {},
+          "lib/net45/SmartThreadPool.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Hudl.Mjolnir.dll": {},
+          "lib/net45/SmartThreadPool.dll": {}
+        }
+      },
+      "Hudl.Mjolnir.Attributes/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Hudl.Mjolnir.Attributes.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Hudl.Mjolnir.Attributes.dll": {}
+        }
+      },
+      "log4net/1.2.11": {
+        "type": "package",
+        "compile": {
+          "lib/net40-full/log4net.dll": {}
+        },
+        "runtime": {
+          "lib/net40-full/log4net.dll": {}
+        }
+      },
+      "Microsoft.Framework.Configuration/1.0.0-beta8-15586": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.Configuration.Abstractions": "1.0.0-beta8-15586"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.Configuration.dll": {}
+        }
+      },
+      "Microsoft.Framework.Configuration.Abstractions/1.0.0-beta8-15586": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.Configuration.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.Configuration.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Framework.Configuration.Binder/1.0.0-beta8-15586": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.Configuration": "1.0.0-beta8-15586"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.Configuration.Binder.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.Configuration.Binder.dll": {}
+        }
+      },
+      "Microsoft.Framework.DependencyInjection.Abstractions/1.0.0-beta8-15574": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Framework.OptionsModel/1.0.0-beta8-15574": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.Configuration.Abstractions": "1.0.0-beta8-15586",
+          "Microsoft.Framework.Configuration.Binder": "1.0.0-beta8-15586",
+          "Microsoft.Framework.DependencyInjection.Abstractions": "1.0.0-beta8-15574"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.OptionsModel.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.OptionsModel.dll": {}
+        }
+      },
+      "NEST/1.7.1": {
+        "type": "package",
+        "dependencies": {
+          "Elasticsearch.Net": "1.7.1",
+          "Newtonsoft.Json": "[7.0.0, 8.0.0)"
+        },
+        "compile": {
+          "lib/net45/Nest.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Nest.dll": {}
+        }
+      },
+      "Newtonsoft.Json/6.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      }
+    },
+    "DNX,Version=v4.5.1/win7-x64": {
+      "Autofac/4.0.0-beta7-130": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Autofac.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Autofac.dll": {}
+        }
+      },
+      "Autofac.Framework.DependencyInjection/4.0.0-beta7-130": {
+        "type": "package",
+        "dependencies": {
+          "Autofac": "4.0.0-beta7-130",
+          "Microsoft.Framework.DependencyInjection.Abstractions": "1.0.0-beta7"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Autofac.dll": {},
+          "lib/dnx451/Autofac.Framework.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Autofac.dll": {},
+          "lib/dnx451/Autofac.Framework.DependencyInjection.dll": {}
+        }
+      },
+      "Castle.Core/2.5.1": {
+        "type": "package",
+        "compile": {
+          "lib/NET35/Castle.Core.dll": {}
+        },
+        "runtime": {
+          "lib/NET35/Castle.Core.dll": {}
+        }
+      },
+      "Elasticsearch.Net/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Elasticsearch.Net.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Elasticsearch.Net.dll": {}
+        }
+      },
+      "Hudl.Common/1.4.1": {
+        "type": "package",
+        "compile": {
+          "lib/net35/Hudl.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net35/Hudl.Common.dll": {}
+        }
+      },
+      "Hudl.Config/1.6.0": {
+        "type": "package",
+        "dependencies": {
+          "log4net": "2.0.0"
+        },
+        "compile": {
+          "lib/net40/Hudl.Config.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Hudl.Config.dll": {}
+        }
+      },
+      "Hudl.Mjolnir/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Castle.Core": "2.5.1",
+          "Hudl.Common": "1.4.1",
+          "Hudl.Config": "1.6.0",
+          "Hudl.Mjolnir.Attributes": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Hudl.Mjolnir.dll": {},
+          "lib/net45/SmartThreadPool.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Hudl.Mjolnir.dll": {},
+          "lib/net45/SmartThreadPool.dll": {}
+        }
+      },
+      "Hudl.Mjolnir.Attributes/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Hudl.Mjolnir.Attributes.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Hudl.Mjolnir.Attributes.dll": {}
+        }
+      },
+      "log4net/1.2.11": {
+        "type": "package",
+        "compile": {
+          "lib/net40-full/log4net.dll": {}
+        },
+        "runtime": {
+          "lib/net40-full/log4net.dll": {}
+        }
+      },
+      "Microsoft.Framework.Configuration/1.0.0-beta8-15586": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.Configuration.Abstractions": "1.0.0-beta8-15586"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.Configuration.dll": {}
+        }
+      },
+      "Microsoft.Framework.Configuration.Abstractions/1.0.0-beta8-15586": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.Configuration.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.Configuration.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Framework.Configuration.Binder/1.0.0-beta8-15586": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.Configuration": "1.0.0-beta8-15586"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.Configuration.Binder.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.Configuration.Binder.dll": {}
+        }
+      },
+      "Microsoft.Framework.DependencyInjection.Abstractions/1.0.0-beta8-15574": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Framework.OptionsModel/1.0.0-beta8-15574": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.Configuration.Abstractions": "1.0.0-beta8-15586",
+          "Microsoft.Framework.Configuration.Binder": "1.0.0-beta8-15586",
+          "Microsoft.Framework.DependencyInjection.Abstractions": "1.0.0-beta8-15574"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.OptionsModel.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.OptionsModel.dll": {}
+        }
+      },
+      "NEST/1.7.1": {
+        "type": "package",
+        "dependencies": {
+          "Elasticsearch.Net": "1.7.1",
+          "Newtonsoft.Json": "[7.0.0, 8.0.0)"
+        },
+        "compile": {
+          "lib/net45/Nest.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Nest.dll": {}
+        }
+      },
+      "Newtonsoft.Json/6.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Autofac/4.0.0-beta7-130": {
+      "type": "package",
+      "sha512": "MIk/KgibBjrjDX1vM/iIjPvYfu1pHbP8vvsHmpmZwf6Q7alvHdrCQrfDXAf2LsF2rEueZjx/KJKIF2XhDybX6w==",
+      "files": [
+        "Autofac.4.0.0-beta7-130.nupkg",
+        "Autofac.4.0.0-beta7-130.nupkg.sha512",
+        "Autofac.nuspec",
+        "lib/dnx451/Autofac.dll",
+        "lib/dnx451/Autofac.xml",
+        "lib/dotnet/Autofac.dll",
+        "lib/dotnet/Autofac.xml",
+        "lib/net45/Autofac.dll",
+        "lib/net45/Autofac.xml",
+        "lib/win/Autofac.dll",
+        "lib/win/Autofac.xml",
+        "repo.json"
+      ]
+    },
+    "Autofac.Framework.DependencyInjection/4.0.0-beta7-130": {
+      "type": "package",
+      "sha512": "qJx3mbPc/o2sGfCCuoAf3GhzqIvRVr2n506wZLiBuDq0VivOBEm+r9UCBfhCw5HEMGUj4BnBgXn6yjwD8p216A==",
+      "files": [
+        "Autofac.Framework.DependencyInjection.4.0.0-beta7-130.nupkg",
+        "Autofac.Framework.DependencyInjection.4.0.0-beta7-130.nupkg.sha512",
+        "Autofac.Framework.DependencyInjection.nuspec",
+        "lib/dnx451/Autofac.dll",
+        "lib/dnx451/Autofac.Framework.DependencyInjection.dll",
+        "lib/dnx451/Autofac.Framework.DependencyInjection.xml",
+        "lib/dnx451/Autofac.xml",
+        "lib/dotnet/Autofac.dll",
+        "lib/dotnet/Autofac.Framework.DependencyInjection.dll",
+        "lib/dotnet/Autofac.Framework.DependencyInjection.xml",
+        "lib/dotnet/Autofac.xml",
+        "lib/net45/Autofac.dll",
+        "lib/net45/Autofac.Framework.DependencyInjection.dll",
+        "lib/net45/Autofac.Framework.DependencyInjection.xml",
+        "lib/net45/Autofac.xml",
+        "repo.json"
+      ]
+    },
+    "Castle.Core/2.5.1": {
+      "type": "package",
+      "sha512": "oFinYWXxedwxKb2w45LEdHzYDvQLHXlZ0Q+jwVmgt17yptPR+Arvzz8tWe99Q3r6vsPFQltb9MHcPwMVzPZqfQ==",
+      "files": [
+        "Castle.Core.2.5.1.nupkg",
+        "Castle.Core.2.5.1.nupkg.sha512",
+        "Castle.Core.nuspec",
+        "lib/ASL - Apache Software Foundation License.txt",
+        "lib/BreakingChanges.txt",
+        "lib/Changes.txt",
+        "lib/Committers.txt",
+        "lib/NET35/Castle.Core.dll",
+        "lib/NET40ClientProfile/Castle.Core.dll",
+        "lib/SL3/Castle.Core.dll",
+        "lib/SL4/Castle.Core.dll"
+      ]
+    },
+    "Elasticsearch.Net/1.7.1": {
+      "type": "package",
+      "sha512": "IiIV3w6IBOD7owqrPO591aLXc2J8skuH2xqiwSoQl4sL/X01lBhQIOHQkjQSV5BO6y9Fdn1d6jms1KayM4oJwg==",
+      "files": [
+        "Elasticsearch.Net.1.7.1.nupkg",
+        "Elasticsearch.Net.1.7.1.nupkg.sha512",
+        "Elasticsearch.Net.nuspec",
+        "lib/Elasticsearch.Net.dll",
+        "lib/Elasticsearch.Net.pdb",
+        "lib/Elasticsearch.Net.XML",
+        "lib/net40/Elasticsearch.Net.dll",
+        "lib/net40/Elasticsearch.Net.pdb",
+        "lib/net40/Elasticsearch.Net.XML",
+        "lib/net45/Elasticsearch.Net.dll",
+        "lib/net45/Elasticsearch.Net.pdb",
+        "lib/net45/Elasticsearch.Net.XML"
+      ]
+    },
+    "Hudl.Common/1.4.1": {
+      "type": "package",
+      "sha512": "z7FJSqqwx37IFirNMWKxSekdd6EEc0xJ0zNZWaLYOCryyc0zkalbmNgoYwzSQxrDSHukJbLmPkaA/LVTwH41qQ==",
+      "files": [
+        "Hudl.Common.1.4.1.nupkg",
+        "Hudl.Common.1.4.1.nupkg.sha512",
+        "Hudl.Common.nuspec",
+        "lib/net35/Hudl.Common.dll",
+        "lib/net35/Hudl.Common.pdb"
+      ]
+    },
+    "Hudl.Config/1.6.0": {
+      "type": "package",
+      "sha512": "9jrBubKhEbfh27DyH4t3OKvGn2Wz4h2OCI6eT17eNo5yJa4cZ8+K5873wREN205cpR++w2bUXv0aEMH/5Kvz0g==",
+      "files": [
+        "Hudl.Config.1.6.0.nupkg",
+        "Hudl.Config.1.6.0.nupkg.sha512",
+        "Hudl.Config.nuspec",
+        "lib/net40/Hudl.Config.dll",
+        "lib/net40/Hudl.Config.pdb"
+      ]
+    },
+    "Hudl.Mjolnir/2.2.0": {
+      "type": "package",
+      "sha512": "ebccSXS92bboU7Wd6FxcJ0kDZOBs7AclSdnB7f5z1f+8ncc01xfqL5tEEAXlrc7M5B/UKLpzcWH9tEm9utqt3w==",
+      "files": [
+        "Hudl.Mjolnir.2.2.0.nupkg",
+        "Hudl.Mjolnir.2.2.0.nupkg.sha512",
+        "Hudl.Mjolnir.nuspec",
+        "lib/net45/Hudl.Mjolnir.dll",
+        "lib/net45/Hudl.Mjolnir.pdb",
+        "lib/net45/SmartThreadPool.dll",
+        "lib/net45/SmartThreadPool.pdb"
+      ]
+    },
+    "Hudl.Mjolnir.Attributes/1.0.0": {
+      "type": "package",
+      "sha512": "ieNt3EE6OxyX1X3omXc7b+/dWQ/gCUzyxupOhhyGseVUHPaNt117fUd1Vs98qug/pCFOpv1jxjZZGC7I0EwnrQ==",
+      "files": [
+        "Hudl.Mjolnir.Attributes.1.0.0.nupkg",
+        "Hudl.Mjolnir.Attributes.1.0.0.nupkg.sha512",
+        "Hudl.Mjolnir.Attributes.nuspec",
+        "lib/net45/Hudl.Mjolnir.Attributes.dll",
+        "lib/net45/Hudl.Mjolnir.Attributes.pdb"
+      ]
+    },
+    "log4net/1.2.11": {
+      "type": "package",
+      "sha512": "6x99ENeweX1QRylHGkBlKndUQJrluQAa9+XlF3VMm8qfkrCTfnrj8rhee8Nbt0UOjTBxbQguPB7NXs61YLSt4A==",
+      "files": [
+        "lib/net10-full/log4net.dll",
+        "lib/net10-full/log4net.xml",
+        "lib/net11-full/log4net.dll",
+        "lib/net11-full/log4net.xml",
+        "lib/net20-cf/log4net.dll",
+        "lib/net20-cf/log4net.xml",
+        "lib/net20-full/log4net.dll",
+        "lib/net20-full/log4net.xml",
+        "lib/net35-client/log4net.dll",
+        "lib/net35-client/log4net.xml",
+        "lib/net35-full/log4net.dll",
+        "lib/net35-full/log4net.xml",
+        "lib/net40-client/log4net.dll",
+        "lib/net40-client/log4net.xml",
+        "lib/net40-full/log4net.dll",
+        "lib/net40-full/log4net.xml",
+        "log4net.1.2.11.nupkg",
+        "log4net.1.2.11.nupkg.sha512",
+        "log4net.nuspec"
+      ]
+    },
+    "Microsoft.Framework.Configuration/1.0.0-beta8-15586": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "IFji+IBkGhnyer4k6EgGvbtNTSwWkPWz9tkmCD2R1NHzeesaQtyDoHb9347dvBFWp8u7Wa/CMmMAELexn5f1qQ==",
+      "files": [
+        "lib/dnx451/Microsoft.Framework.Configuration.dll",
+        "lib/dnx451/Microsoft.Framework.Configuration.xml",
+        "lib/dotnet/Microsoft.Framework.Configuration.dll",
+        "lib/dotnet/Microsoft.Framework.Configuration.xml",
+        "lib/net45/Microsoft.Framework.Configuration.dll",
+        "lib/net45/Microsoft.Framework.Configuration.xml",
+        "Microsoft.Framework.Configuration.1.0.0-beta8-15586.nupkg",
+        "Microsoft.Framework.Configuration.1.0.0-beta8-15586.nupkg.sha512",
+        "Microsoft.Framework.Configuration.nuspec"
+      ]
+    },
+    "Microsoft.Framework.Configuration.Abstractions/1.0.0-beta8-15586": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "eDLUDM8z3M37YpJwp8xwzx1UpUJXpRcen2ioe9Sxz6m0gWre5m+QOkXBI0wp9mqxqh4zukxR8IUAL9+uSHXTYA==",
+      "files": [
+        "lib/dnx451/Microsoft.Framework.Configuration.Abstractions.dll",
+        "lib/dnx451/Microsoft.Framework.Configuration.Abstractions.xml",
+        "lib/dotnet/Microsoft.Framework.Configuration.Abstractions.dll",
+        "lib/dotnet/Microsoft.Framework.Configuration.Abstractions.xml",
+        "lib/net45/Microsoft.Framework.Configuration.Abstractions.dll",
+        "lib/net45/Microsoft.Framework.Configuration.Abstractions.xml",
+        "Microsoft.Framework.Configuration.Abstractions.1.0.0-beta8-15586.nupkg",
+        "Microsoft.Framework.Configuration.Abstractions.1.0.0-beta8-15586.nupkg.sha512",
+        "Microsoft.Framework.Configuration.Abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Framework.Configuration.Binder/1.0.0-beta8-15586": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "+9LCeRAS2fONMB9BmJ40LH8ABmo+4pF9rJEBIMszIX+TgNt1mfWIXnue9JzMxEUPGGAJZT0GPrPJ/U9F9ZmmkQ==",
+      "files": [
+        "lib/dnx451/Microsoft.Framework.Configuration.Binder.dll",
+        "lib/dnx451/Microsoft.Framework.Configuration.Binder.xml",
+        "lib/dotnet/Microsoft.Framework.Configuration.Binder.dll",
+        "lib/dotnet/Microsoft.Framework.Configuration.Binder.xml",
+        "lib/net45/Microsoft.Framework.Configuration.Binder.dll",
+        "lib/net45/Microsoft.Framework.Configuration.Binder.xml",
+        "Microsoft.Framework.Configuration.Binder.1.0.0-beta8-15586.nupkg",
+        "Microsoft.Framework.Configuration.Binder.1.0.0-beta8-15586.nupkg.sha512",
+        "Microsoft.Framework.Configuration.Binder.nuspec"
+      ]
+    },
+    "Microsoft.Framework.DependencyInjection.Abstractions/1.0.0-beta8-15574": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "d0vZvD3BMIDz70Uan7pPv/0tySQ8r3pk9H/vit/yZFtkG+uHWkibEm/zQ+q51Vr/qkM0hO+NN48YreBiMEmcgQ==",
+      "files": [
+        "lib/dnx451/Microsoft.Framework.DependencyInjection.Abstractions.dll",
+        "lib/dnx451/Microsoft.Framework.DependencyInjection.Abstractions.xml",
+        "lib/dotnet/Microsoft.Framework.DependencyInjection.Abstractions.dll",
+        "lib/dotnet/Microsoft.Framework.DependencyInjection.Abstractions.xml",
+        "lib/net45/Microsoft.Framework.DependencyInjection.Abstractions.dll",
+        "lib/net45/Microsoft.Framework.DependencyInjection.Abstractions.xml",
+        "Microsoft.Framework.DependencyInjection.Abstractions.1.0.0-beta8-15574.nupkg",
+        "Microsoft.Framework.DependencyInjection.Abstractions.1.0.0-beta8-15574.nupkg.sha512",
+        "Microsoft.Framework.DependencyInjection.Abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Framework.OptionsModel/1.0.0-beta8-15574": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "pSlT8LXTtcPVj8MaUULhyDYR1rvZrT+7kDEDRZ1OGHwUByF7KJtxco9hQiBF2dGSj9+wjq+Q4XRpU5Vbl7EySw==",
+      "files": [
+        "lib/dnx451/Microsoft.Framework.OptionsModel.dll",
+        "lib/dnx451/Microsoft.Framework.OptionsModel.xml",
+        "lib/dotnet/Microsoft.Framework.OptionsModel.dll",
+        "lib/dotnet/Microsoft.Framework.OptionsModel.xml",
+        "lib/net45/Microsoft.Framework.OptionsModel.dll",
+        "lib/net45/Microsoft.Framework.OptionsModel.xml",
+        "Microsoft.Framework.OptionsModel.1.0.0-beta8-15574.nupkg",
+        "Microsoft.Framework.OptionsModel.1.0.0-beta8-15574.nupkg.sha512",
+        "Microsoft.Framework.OptionsModel.nuspec"
+      ]
+    },
+    "NEST/1.7.1": {
+      "type": "package",
+      "sha512": "S0IoqIyK6KrFUp4yrLoCghbFuyvO21B7MzXjlqRxH1D7DfMgI1zoEhGpfBLd6DfhOiNwkFhyyelXNyTH+W2wAw==",
+      "files": [
+        "lib/Nest.dll",
+        "lib/Nest.pdb",
+        "lib/Nest.XML",
+        "lib/net40/Nest.dll",
+        "lib/net40/Nest.pdb",
+        "lib/net40/Nest.XML",
+        "lib/net45/Nest.dll",
+        "lib/net45/Nest.pdb",
+        "lib/net45/Nest.XML",
+        "NEST.1.7.1.nupkg",
+        "NEST.1.7.1.nupkg.sha512",
+        "NEST.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/6.0.8": {
+      "type": "package",
+      "sha512": "7ut47NDedTW19EbL0JpFDYUP62fcuz27hJrehCDNajdCS5NtqL+E39+7Um3OkNc2wl2ym7K8Ln5eNuLus6mVGQ==",
+      "files": [
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netcore45/Newtonsoft.Json.dll",
+        "lib/netcore45/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+wp80+win8+wpa81+aspnetcore50/Newtonsoft.Json.dll",
+        "lib/portable-net45+wp80+win8+wpa81+aspnetcore50/Newtonsoft.Json.xml",
+        "Newtonsoft.Json.6.0.8.nupkg",
+        "Newtonsoft.Json.6.0.8.nupkg.sha512",
+        "Newtonsoft.Json.nuspec",
+        "tools/install.ps1"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "": [
+      "log4net >= 1.2.11",
+      "Autofac >= 4.0.0-beta7-130",
+      "Autofac.Framework.DependencyInjection >= 4.0.0-beta7-130",
+      "Hudl.Mjolnir >= 2.2.0",
+      "Newtonsoft.Json >= 6.0.8",
+      "Microsoft.Framework.OptionsModel >= 1.0.0-beta8-*",
+      "NEST >= 1.7.1"
+    ],
+    "DNX,Version=v4.5.1": []
+  }
+}
