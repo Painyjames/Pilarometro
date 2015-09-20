@@ -7,11 +7,13 @@
   "licenseUrl": "",
 
   "dependencies": {
+    "Cascomio.Pilarometro.Common": "1.0.0",
+    "Microsoft.Net.Http.Client":  "1.0.0-beta8-15501",
     "NEST": "1.7.1"
   },
 
   "commands": {
-    "Cascomio.Pilarometro.Import": "Cascomio.Pilarometro.Import"
+    "import": "Cascomio.Pilarometro.Import"
   },
 
   "frameworks": {
