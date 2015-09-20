@@ -21,9 +21,10 @@ namespace Cascomio.Pilarometro.Import
 			.AutoActivate()
 			.SingleInstance();
 			builder.Register(p => new ElasticClient(
-					new ConnectionSettings(new Uri("http://localhost:9200"))
-				))
-				.As<IElasticClient>().SingleInstance();
+				//TODO: get this from config file
+				new ConnectionSettings(new Uri("http://localhost:9200"))
+			))
+			.As<IElasticClient>().SingleInstance();
 
 			var container = builder.Build();
 
