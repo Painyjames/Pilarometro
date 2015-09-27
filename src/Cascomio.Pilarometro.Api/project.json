@@ -17,6 +17,10 @@
     "Hudl.Mjolnir": "2.2.0.0",
     "Newtonsoft.Json": "6.0.8.0",
     "Microsoft.Framework.OptionsModel": "1.0.0-beta8-*",
+    "Cascomio.Pilarometro.Common": "1.0.1",
+    "Cascomio.Pilarometro.DataTransfer": "1.0.0",
+    "Cascomio.Pilarometro.Domain": "1.0.0",
+    "AutoMapper": "4.0.4",
     "NEST": "1.7.1"
   },
 

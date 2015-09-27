@@ -1,0 +1,3 @@
+﻿{  
+	"elasticsearch": { "endpoints": "http://cascomio.ddns.net:9200" }
+}

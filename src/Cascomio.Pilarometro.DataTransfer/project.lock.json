@@ -52,10 +52,6 @@
           "Newtonsoft.Json": "6.0.8"
         }
       },
-      "Cascomio.Pilarometro.Domain/1.0.0": {
-        "type": "project",
-        "framework": "DNX,Version=v4.5.1"
-      },
       "Castle.Core/2.5.1": {
         "type": "package",
         "compile": {
@@ -216,22 +212,6 @@
           "lib/dnx451/Microsoft.Framework.OptionsModel.dll": {}
         }
       },
-      "Microsoft.Net.Http.Client/1.0.0-beta8-15501": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "Microsoft.CSharp",
-          "mscorlib",
-          "System",
-          "System.Core",
-          "System.Net.Http"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.Net.Http.Client.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.Net.Http.Client.dll": {}
-        }
-      },
       "NEST/1.7.1": {
         "type": "package",
         "dependencies": {
@@ -245,7 +225,7 @@
           "lib/net45/Nest.dll": {}
         }
       },
-      "Newtonsoft.Json/7.0.1-beta2": {
+      "Newtonsoft.Json/6.0.8": {
         "type": "package",
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {}
@@ -305,10 +285,6 @@
           "Newtonsoft.Json": "6.0.8"
         }
       },
-      "Cascomio.Pilarometro.Domain/1.0.0": {
-        "type": "project",
-        "framework": "DNX,Version=v4.5.1"
-      },
       "Castle.Core/2.5.1": {
         "type": "package",
         "compile": {
@@ -469,22 +445,6 @@
           "lib/dnx451/Microsoft.Framework.OptionsModel.dll": {}
         }
       },
-      "Microsoft.Net.Http.Client/1.0.0-beta8-15501": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "Microsoft.CSharp",
-          "mscorlib",
-          "System",
-          "System.Core",
-          "System.Net.Http"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.Net.Http.Client.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.Net.Http.Client.dll": {}
-        }
-      },
       "NEST/1.7.1": {
         "type": "package",
         "dependencies": {
@@ -498,7 +458,7 @@
           "lib/net45/Nest.dll": {}
         }
       },
-      "Newtonsoft.Json/7.0.1-beta2": {
+      "Newtonsoft.Json/6.0.8": {
         "type": "package",
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {}
@@ -558,10 +518,6 @@
           "Newtonsoft.Json": "6.0.8"
         }
       },
-      "Cascomio.Pilarometro.Domain/1.0.0": {
-        "type": "project",
-        "framework": "DNX,Version=v4.5.1"
-      },
       "Castle.Core/2.5.1": {
         "type": "package",
         "compile": {
@@ -722,22 +678,6 @@
           "lib/dnx451/Microsoft.Framework.OptionsModel.dll": {}
         }
       },
-      "Microsoft.Net.Http.Client/1.0.0-beta8-15501": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "Microsoft.CSharp",
-          "mscorlib",
-          "System",
-          "System.Core",
-          "System.Net.Http"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.Net.Http.Client.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.Net.Http.Client.dll": {}
-        }
-      },
       "NEST/1.7.1": {
         "type": "package",
         "dependencies": {
@@ -751,7 +691,7 @@
           "lib/net45/Nest.dll": {}
         }
       },
-      "Newtonsoft.Json/7.0.1-beta2": {
+      "Newtonsoft.Json/6.0.8": {
         "type": "package",
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {}
@@ -766,10 +706,6 @@
     "Cascomio.Pilarometro.Common/1.0.1": {
       "type": "project",
       "path": "../Cascomio.Pilarometro.Common/project.json"
-    },
-    "Cascomio.Pilarometro.Domain/1.0.0": {
-      "type": "project",
-      "path": "../Cascomio.Pilarometro.Domain/project.json"
     },
     "Autofac/4.0.0-beta7-130": {
       "type": "package",
@@ -997,21 +933,6 @@
         "Microsoft.Framework.OptionsModel.nuspec"
       ]
     },
-    "Microsoft.Net.Http.Client/1.0.0-beta8-15501": {
-      "type": "package",
-      "sha512": "ACHSjaSADJtZ3GeKS9l2KHbgviyszjRWyrDKdje4EECkjOsmjPK/p7Sq3VGgQVsT5hGQ5lTQSImWKxSIIxaG6A==",
-      "files": [
-        "lib/dnx451/Microsoft.Net.Http.Client.dll",
-        "lib/dnx451/Microsoft.Net.Http.Client.xml",
-        "lib/dnxcore50/Microsoft.Net.Http.Client.dll",
-        "lib/dnxcore50/Microsoft.Net.Http.Client.xml",
-        "lib/net45/Microsoft.Net.Http.Client.dll",
-        "lib/net45/Microsoft.Net.Http.Client.xml",
-        "Microsoft.Net.Http.Client.1.0.0-beta8-15501.nupkg",
-        "Microsoft.Net.Http.Client.1.0.0-beta8-15501.nupkg.sha512",
-        "Microsoft.Net.Http.Client.nuspec"
-      ]
-    },
     "NEST/1.7.1": {
       "type": "package",
       "sha512": "S0IoqIyK6KrFUp4yrLoCghbFuyvO21B7MzXjlqRxH1D7DfMgI1zoEhGpfBLd6DfhOiNwkFhyyelXNyTH+W2wAw==",
@@ -1030,9 +951,9 @@
         "NEST.nuspec"
       ]
     },
-    "Newtonsoft.Json/7.0.1-beta2": {
+    "Newtonsoft.Json/6.0.8": {
       "type": "package",
-      "sha512": "/NZ+ZdbbNyoWYrjRajzERgKGGOcbjfGbi2mi/4C5MpT5BOV2nUoQ+RIYaN0WxYq6i20nHQbYN56IWBTB4ut20Q==",
+      "sha512": "7ut47NDedTW19EbL0JpFDYUP62fcuz27hJrehCDNajdCS5NtqL+E39+7Um3OkNc2wl2ym7K8Ln5eNuLus6mVGQ==",
       "files": [
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
@@ -1042,12 +963,14 @@
         "lib/net40/Newtonsoft.Json.xml",
         "lib/net45/Newtonsoft.Json.dll",
         "lib/net45/Newtonsoft.Json.xml",
+        "lib/netcore45/Newtonsoft.Json.dll",
+        "lib/netcore45/Newtonsoft.Json.xml",
         "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
         "lib/portable-net45+wp80+win8+wpa81+aspnetcore50/Newtonsoft.Json.dll",
         "lib/portable-net45+wp80+win8+wpa81+aspnetcore50/Newtonsoft.Json.xml",
-        "Newtonsoft.Json.7.0.1-beta2.nupkg",
-        "Newtonsoft.Json.7.0.1-beta2.nupkg.sha512",
+        "Newtonsoft.Json.6.0.8.nupkg",
+        "Newtonsoft.Json.6.0.8.nupkg.sha512",
         "Newtonsoft.Json.nuspec",
         "tools/install.ps1"
       ]
@@ -1055,10 +978,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "Cascomio.Pilarometro.Common >= 1.0.1",
-      "Cascomio.Pilarometro.Domain >= 1.0.0",
-      "Microsoft.Net.Http.Client >= 1.0.0-beta8-15501",
-      "NEST >= 1.7.1"
+      "Cascomio.Pilarometro.Common >= 1.0.1"
     ],
     "DNX,Version=v4.5.1": []
   }

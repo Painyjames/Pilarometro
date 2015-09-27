@@ -1,0 +1,16 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "Cascomio.Pilarometro.DataContract Class Library",
+  "authors": [ "fjarb" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "dependencies": {
+    "Cascomio.Pilarometro.Common": "1.0.1"
+  },
+
+  "frameworks": {
+    "dnx451": { }
+  }
+}

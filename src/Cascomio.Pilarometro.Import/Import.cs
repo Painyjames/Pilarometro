@@ -1,10 +1,8 @@
 ﻿using Autofac;
-using Elasticsearch.Net;
+using Cascomio.Pilarometro.Common.Queries;
+using Cascomio.Pilarometro.Domain;
 using Nest;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Cascomio.Pilarometro.Import
 {
@@ -12,8 +10,6 @@ namespace Cascomio.Pilarometro.Import
 	{
 		private readonly IServiceClient _client;
 		private readonly IElasticClient _elasticClient;
-
-		private const string Index = "points_of_interest";
 
 		public Import(IServiceClient client, IElasticClient elasticClient)
 		{
@@ -23,10 +19,30 @@ namespace Cascomio.Pilarometro.Import
 
 		private void Setup()
 		{
+			if (_elasticClient.IndexExists(Indexes.POINTS_OF_INTEREST).Exists)
+				_elasticClient.DeleteIndex(Indexes.POINTS_OF_INTEREST);
+			_elasticClient.CreateIndex(Indexes.POINTS_OF_INTEREST);
 
-			if (_elasticClient.IndexExists(Index).Exists)
-				_elasticClient.DeleteIndex(Index);
-			_elasticClient.CreateIndex(Index);
+			var indexDefinition = new RootObjectMapping
+			{
+				Name = new PropertyNameMarker { Name = Indexes.POINTS_OF_INTEREST },
+				Properties = new Dictionary<PropertyNameMarker, IElasticType>()
+			};
+			_elasticClient.Map<PointOfInterest>(m =>
+			{
+				return m
+				.InitializeUsing(indexDefinition)
+				.IdField(id => id.Path("id"))
+				.SourceField(s => s
+					.Includes(new[] { "*" })
+					)
+				.Properties(props =>
+						props.GeoPoint(s => s
+							.Name(p => p.Coordinates)
+						)
+					);
+			});
+
 		}
 
 		public void Start()
@@ -36,7 +52,7 @@ namespace Cascomio.Pilarometro.Import
             task.Wait();
 			foreach (var pointOfinterest in task.Result)
 			{
-				_elasticClient.Index(pointOfinterest, i => i.Index(Index));
+				_elasticClient.Index(pointOfinterest, i => i.Index(Indexes.POINTS_OF_INTEREST));
             }
 		}
 	}

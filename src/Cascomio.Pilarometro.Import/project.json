@@ -7,7 +7,8 @@
   "licenseUrl": "",
 
   "dependencies": {
-    "Cascomio.Pilarometro.Common": "1.0.0",
+    "Cascomio.Pilarometro.Common": "1.0.1",
+    "Cascomio.Pilarometro.Domain": "1.0.0",
     "Microsoft.Net.Http.Client":  "1.0.0-beta8-15501",
     "NEST": "1.7.1"
   },

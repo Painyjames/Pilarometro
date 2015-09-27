@@ -22,7 +22,7 @@ namespace Cascomio.Pilarometro.Import
 			.SingleInstance();
 			builder.Register(p => new ElasticClient(
 				//TODO: get this from config file
-				new ConnectionSettings(new Uri("http://localhost:9200"))
+				new ConnectionSettings(new Uri("http://cascomio.ddns.net:9200"))
 			))
 			.As<IElasticClient>().SingleInstance();
 
