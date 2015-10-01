@@ -8,6 +8,6 @@ namespace Cascomio.Pilarometro.Common.Queries
 
 	public interface IQuery<TQuery>
 	{
-		IEnumerable<QueryResponse> Query<TEntity>(TQuery query);
+		IEnumerable<TEntity> Query<TEntity>(TQuery query) where TEntity : class;
 	}
 }

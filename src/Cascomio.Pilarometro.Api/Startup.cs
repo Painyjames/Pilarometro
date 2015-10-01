@@ -13,6 +13,7 @@ using Cascomio.Pilarometro.Common;
 using Cascomio.Pilarometro.Common.Config;
 using System.Reflection;
 using Cascomio.Pilarometro.Api.Modules;
+using Hudl.Config;
 
 namespace Cascomio.Pilarometro.Api
 {
@@ -20,13 +21,15 @@ namespace Cascomio.Pilarometro.Api
 	{
 
 		private IContainer _container;
+		private string _basePath;
+
 		public IConfigurationRoot Configuration { get; set; }
 
 		public Startup(IHostingEnvironment env, IApplicationEnvironment appEnv)
 		{
-			var basePath = appEnv.ApplicationBasePath;
+			_basePath = appEnv.ApplicationBasePath;
 			Configuration = new ConfigurationBuilder()
-				.AddJsonFile(basePath + "/App_Data/Development.json")
+				.AddJsonFile(_basePath + "/App_Data/Development.json")
 				.Build();
         }
 
@@ -57,6 +60,8 @@ namespace Cascomio.Pilarometro.Api
 			{
 				configurer.Configure();
             }
+
+			ConfigProvider.UseProvider(new FileConfigurationProvider(_basePath, "config-file.txt"));
 
 			app.UseStaticFiles()
 				.UseMvc(routes =>

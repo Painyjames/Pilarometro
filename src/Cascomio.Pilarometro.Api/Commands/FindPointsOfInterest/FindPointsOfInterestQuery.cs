@@ -6,19 +6,24 @@ using System.Threading.Tasks;
 using Nest;
 using Cascomio.Pilarometro.Domain;
 using Cascomio.Pilarometro.DataContract;
+using Cascomio.Pilarometro.Common;
 
 namespace Cascomio.Pilarometro.Api.Commands.FindPointsOfInterest
 {
 	public class FindPointsOfInterestQuery : NestQuery<FindPointsOfInterestRequest>
 	{
-		public override ISearchResponse<QueryResponse> Execute<TEntity>(FindPointsOfInterestRequest query)
+		public FindPointsOfInterestQuery(IElasticClient client, ElasticsearchOptions options)
+			: base(client, options){
+		}
+
+		public override ISearchResponse<PointOfInterest> Execute<PointOfInterest>(FindPointsOfInterestRequest query)
 		{
-			return Client.Search<PointOfInterest, QueryResponse>(s => s
+			return Client.Search<PointOfInterest>(s => s
 					.Size(query.PageSize)
 					.Index(Indexes.POINTS_OF_INTEREST)
 				.Query(q => q.Filtered(f =>
 						f.Query(qd => qd.MatchAll())
-						.Filter(fs => fs.GeoDistance(fd => fd.Coordinates, p =>
+						.Filter(fs => fs.GeoDistance("coordinates", p =>
 								 p.Distance("200m").Location(query.Latitude, query.Longitude)
 							)
 				))));

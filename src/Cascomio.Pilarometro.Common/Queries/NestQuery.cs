@@ -8,7 +8,7 @@ namespace Cascomio.Pilarometro.Common.Queries
 
 		protected NestQuery() { }
 
-		public NestQuery(IElasticClient client, IRepository repository, ElasticsearchOptions options)
+		public NestQuery(IElasticClient client, ElasticsearchOptions options)
 		{
 			Client = client;
 			Options = options;
@@ -17,9 +17,9 @@ namespace Cascomio.Pilarometro.Common.Queries
 		public IElasticClient Client { get; private set; }
 		public ElasticsearchOptions Options { get; private set; }
 
-		public abstract ISearchResponse<QueryResponse> Execute<TEntity>(TQuery query);
+		public abstract ISearchResponse<TEntity> Execute<TEntity>(TQuery query) where TEntity : class;
 
-		public virtual IEnumerable<QueryResponse> Query<TEntity>(TQuery query)
+		public virtual IEnumerable<TEntity> Query<TEntity>(TQuery query) where TEntity : class
 		{
 			if (query.PageNumber <= 0)
 				query.PageNumber = QueryDefaults.PageNumber;
@@ -27,9 +27,7 @@ namespace Cascomio.Pilarometro.Common.Queries
 			if (query.PageSize <= 0)
 				query.PageSize = QueryDefaults.PageSize;
 
-			var response = Execute<TEntity>(query);
-			
-			return response.Documents;
+			return Execute<TEntity>(query).Documents;
 		}
 	}
 

@@ -22,7 +22,7 @@ namespace Cascomio.Pilarometro.Common
 			builder.Register(p => p.Resolve<IOptions<ElasticsearchOptions>>().Value).As<ElasticsearchOptions>().SingleInstance();
 			
 			builder.Register(p => new ElasticClient(
-				new ConnectionSettings(p.Resolve<IOptions<ElasticsearchOptions>>().Value.Url.First())
+				new ConnectionSettings(p.Resolve<IOptions<ElasticsearchOptions>>().Value.Url.First()).EnableTrace()
 			))
 			.As<IElasticClient>().SingleInstance();
 		}

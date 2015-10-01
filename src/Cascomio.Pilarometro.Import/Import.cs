@@ -23,11 +23,17 @@ namespace Cascomio.Pilarometro.Import
 				_elasticClient.DeleteIndex(Indexes.POINTS_OF_INTEREST);
 			_elasticClient.CreateIndex(Indexes.POINTS_OF_INTEREST);
 
+			var notAnalyzed = new StringMapping
+			{
+				Index = FieldIndexOption.NotAnalyzed
+			};
 			var indexDefinition = new RootObjectMapping
 			{
 				Name = new PropertyNameMarker { Name = Indexes.POINTS_OF_INTEREST },
 				Properties = new Dictionary<PropertyNameMarker, IElasticType>()
 			};
+			indexDefinition.Properties.Add("id", notAnalyzed);
+
 			_elasticClient.Map<PointOfInterest>(m =>
 			{
 				return m

@@ -4,7 +4,6 @@ using Cascomio.Pilarometro.Common.Queries;
 using Cascomio.Pilarometro.DataContract;
 using Cascomio.Pilarometro.Domain;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
