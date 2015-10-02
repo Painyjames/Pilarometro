@@ -24,7 +24,7 @@ namespace Cascomio.Pilarometro.Api.Commands.FindPointsOfInterest
 				.Query(q => q.Filtered(f =>
 						f.Query(qd => qd.MatchAll())
 						.Filter(fs => fs.GeoDistance("coordinates", p =>
-								 p.Distance("200m").Location(query.Latitude, query.Longitude)
+								 p.Distance("500m").Location(query.Latitude, query.Longitude)
 							)
 				))));
         }

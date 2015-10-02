@@ -10,6 +10,6 @@ namespace Cascomio.Pilarometro.Domain
 		public string Id { get; set; }
 		public string Name { get; set; }
 		public string Email { get; set; }
-		public PointOfInterest PointOfInterest { get; set;}
+		public List<PointOfInterest> PointsOfInterest { get; set;}
     }
 }

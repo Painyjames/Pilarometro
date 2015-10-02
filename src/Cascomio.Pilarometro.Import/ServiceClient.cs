@@ -13,10 +13,15 @@ namespace Cascomio.Pilarometro.Import
 	public class ServiceClient : IServiceClient
 	{
 
-		private const double Top = 41.710261;
-		private const double Bottom = 41.607994;
-		private const double Left = -0.975094;
-		private const double Right = -0.781354;
+		private const double Top = 51.5986708;
+		private const double Bottom = 51.5586708;
+		private const double Left = -0.0227316;
+		private const double Right = -0.0027316;
+
+		//private const double Top = 41.710261;
+		//private const double Bottom = 41.607994;
+		//private const double Left = -0.975094;
+		//private const double Right = -0.781354;
 		private const double Precision = 0.01;
 		private const string Url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?types=bar|restaurant|point_of_interest&location={0},{1}&key=AIzaSyCeT-vkL-U_0L0LaMJicDwXu_5-G0ZiyfA&radius=500";
 
@@ -44,7 +49,7 @@ namespace Cascomio.Pilarometro.Import
 											   {
 												   Id = s.Id,
 												   Name = s.Name,
-												   Rating = s.Rating,
+												   Rating = s.Rating == 0? 3:s.Rating,
 												   Coordinates = new Coordinates
 												   {
 													   Lat = s.Geometry?.Location?.Lat,
